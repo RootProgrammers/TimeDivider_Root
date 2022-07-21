@@ -1,7 +1,5 @@
 import Home from 'pages/Home'
 
-import Login from 'pages/Login'
-import Signup from 'pages/SignUp'
 import MyPage from 'pages/MyPage'
 
 import CreateSpareTime from 'pages/CreateSpareTime'
@@ -16,9 +14,7 @@ import DetailPost from 'pages/DetailPost'
 
 const routes = [
 	{ path: 'myPageEdit', view: MyPageEdit },
-	{ path: 'signup', view: Signup },
-	{ path: '', view: Login },
-	{ path: 'signup', view: Signup },
+	{ path: '', view: Home },
 	{
 		path: 'myPage',
 		view: MyPage,

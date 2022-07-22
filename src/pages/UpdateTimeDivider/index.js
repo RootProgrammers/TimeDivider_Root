@@ -12,7 +12,7 @@ import {
 import AddFormModal from 'pages/UpdateTimeDivider/components/AddFormModal'
 import MergeFormModal from 'pages/UpdateTimeDivider/components/MergeFormModal'
 import CompleteFormModal from 'pages/UpdateTimeDivider/components/CompleteFormModal'
-import { BottomBar, Logo, Timer } from 'shared/components'
+import { Logo, Timer } from 'shared/components'
 
 import { useTimers } from 'shared/hooks'
 import { ToolBarButton } from './components/ToolBarButton'
@@ -76,9 +76,7 @@ const UpdateTimeDivider = () => {
 			{mode === addMode && <AddFormModal />}
 			{mode === doneMode && <CompleteFormModal />}
 			{mode === mergeMode && <MergeFormModal />}
-			<BottomBarArea>
-				<BottomBar />
-			</BottomBarArea>
+			<BottomBarArea />
 		</Wrapper>
 	)
 }

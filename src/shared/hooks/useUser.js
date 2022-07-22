@@ -1,8 +1,7 @@
 import { useRecoilState, useResetRecoilState } from 'recoil'
 import { loginDataState, userState } from 'state/user'
-import { requestSignup, requestLogin, requestLogout } from 'shared/api/apis/authApis'
+import { requestLogout } from 'shared/api/apis/authApis'
 import { getUser, requestChangeFullName, uploadImage } from 'shared/api/apis/userApis'
-import { createPost } from 'shared/api/apis/postApis'
 import useTimers from 'shared/hooks/useTimers'
 
 const dummyUserImage = 'https://tva1.sinaimg.cn/large/e6c9d24egy1h3g25xp63rj20e80e8gm1.jpg'
@@ -41,35 +40,9 @@ export const useUser = () => {
 		})
 	}
 
-	const login = async (userInfo = { email: null, password: null }) => {
-		const { isSuccess, message, user, ...newLoginData } = await requestLogin(userInfo)
-
-		if (!isSuccess) {
-			return { isSuccess, message }
-		}
-
-		setLoginData(newLoginData)
-		setUser({ ...user, image: user.image ?? dummyUserImage })
-
-		return { isSuccess, message }
-	}
-
-	const signup = async (userInfo = { email: null, fullName: 'unknown', password: null }) => {
-		const { isSuccess, message, token } = await requestSignup(userInfo)
-		if (!isSuccess) {
-			return { isSuccess, message }
-		}
-
-		await createPost(token)
-		await login(userInfo)
-		return { isSuccess, message: '회원가입에 성공했습니다.' }
-	}
-
 	return {
 		user,
 		isLoggedIn,
-		login,
-		signup,
 		changeName,
 		changeImage,
 		refreshUser,

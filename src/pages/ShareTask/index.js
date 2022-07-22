@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { colors, themeColors } from 'shared/constants/colors'
 import { useNavigate } from 'react-router-dom'
 import { usePosts, useUser } from 'shared/hooks'
-import { Avatar, BottomBar, Button, PostCard, Text } from 'shared/components'
+import { Avatar, Button, PostCard, Text } from 'shared/components'
 import AvatarItem from './components/AvatarItem'
 import loadingImage from 'shared/images/loading.gif'
 
@@ -99,9 +99,7 @@ const ShareTask = () => {
 					</CardArea>
 				</>
 			)}
-			<Footer>
-				<BottomBar />
-			</Footer>
+			<Footer></Footer>
 		</Wrapper>
 	)
 }

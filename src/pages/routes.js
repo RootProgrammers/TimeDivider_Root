@@ -6,11 +6,9 @@ import UpdateTimeDivider from 'pages/UpdateTimeDivider'
 import ShareTask from 'pages/ShareTask'
 
 import NotFound from 'pages/NotFound'
-import MyPageEdit from 'pages/MyPageEdit'
 import DetailPost from 'pages/DetailPost'
 
 const routes = [
-	{ path: 'myPageEdit', view: MyPageEdit },
 	{ path: '', view: Home },
 	{
 		path: 'home',

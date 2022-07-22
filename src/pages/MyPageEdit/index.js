@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { useNavigate } from 'react-router-dom'
 import { Avatar, NavBar } from 'shared/components'
-import { Profiles, Setting, Settings } from '../MyPage'
 import { useUser } from 'shared/hooks/useUser'
 import { colors, themeColors } from 'shared/constants/colors'
 
@@ -115,3 +114,45 @@ const Done = styled.div`
 `
 
 const ImageInput = styled(Input)``
+export const Description = styled.div`
+	width: 24.2rem;
+	height: 9rem;
+	text-align: center;
+	margin-top: 15.6rem;
+	margin-bottom: 13.6rem;
+`
+export const NotLoggedInWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+`
+export const Profiles = styled.div`
+	display: flex;
+	width: 100%;
+	margin-bottom: 2.7rem;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1rem;
+`
+
+export const Settings = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 1rem;
+	width: 100%;
+`
+export const Setting = styled.div`
+	box-sizing: border-box;
+	display: flex;
+	column-gap: 1rem;
+	width: 33.3rem;
+	height: 5rem;
+	border-radius: 1.1rem;
+	align-items: center;
+	padding: 1.5rem;
+	background-color: ${colors.white};
+`

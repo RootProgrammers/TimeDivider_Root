@@ -19,7 +19,7 @@ const BottomBar = ({ ...props }) => {
 					src={clockImg}
 					to={'/updateTimeDivider'}
 				/>
-				<NavItem currentpath={location.pathname} as={Link} src={profileImg} to={'/myPage'} />
+				<NavItem currentpath={'/'} as={Link} src={profileImg} to={'/updateTimeDivider'} />
 			</NavItems>
 		</Wrapper>
 	)

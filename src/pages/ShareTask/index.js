@@ -3,9 +3,8 @@ import styled from 'styled-components'
 import { colors, themeColors } from 'shared/constants/colors'
 import { useNavigate } from 'react-router-dom'
 import { usePosts, useUser } from 'shared/hooks'
-import { Avatar, Button, BottomBar, Text, PostCard } from 'shared/components'
+import { Avatar, BottomBar, Button, PostCard, Text } from 'shared/components'
 import AvatarItem from './components/AvatarItem'
-import { Description, NotLoggedInWrapper } from '../MyPage'
 import loadingImage from 'shared/images/loading.gif'
 
 const ShareTask = () => {
@@ -190,3 +189,18 @@ export const Loading = styled.div`
 `
 
 export default ShareTask
+
+const Description = styled.div`
+	width: 24.2rem;
+	height: 9rem;
+	text-align: center;
+	margin-top: 15.6rem;
+	margin-bottom: 13.6rem;
+`
+const NotLoggedInWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+`

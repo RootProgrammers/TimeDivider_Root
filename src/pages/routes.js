@@ -1,7 +1,4 @@
 import Home from 'pages/Home'
-
-import MyPage from 'pages/MyPage'
-
 import CreateSpareTime from 'pages/CreateSpareTime'
 import CreateTimerName from 'pages/CreateTimerName'
 import CreateTimeDivider from 'pages/CreateTimeDivider'
@@ -15,11 +12,6 @@ import DetailPost from 'pages/DetailPost'
 const routes = [
 	{ path: 'myPageEdit', view: MyPageEdit },
 	{ path: '', view: Home },
-	{
-		path: 'myPage',
-		view: MyPage,
-		title: '마이페이지',
-	},
 	{
 		path: 'home',
 		view: Home,

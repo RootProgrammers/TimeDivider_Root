@@ -4,10 +4,10 @@ import * as likeApis from './apis/likeApis'
 import * as commentApis from './apis/commentApis'
 
 const apis = {
-	...userApis,
-	...postApis,
-	...likeApis,
-	...commentApis,
+  ...userApis,
+  ...postApis,
+  ...likeApis,
+  ...commentApis,
 }
 
 export default apis

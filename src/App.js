@@ -4,12 +4,12 @@ import { RecoilRoot } from 'recoil'
 import { AppLayout } from './shared/layout'
 
 const App = () => (
-	<RecoilRoot>
-		<GlobalStyle />
-		<AppLayout>
-			<AppRouter />
-		</AppLayout>
-	</RecoilRoot>
+  <RecoilRoot>
+    <GlobalStyle />
+    <AppLayout>
+      <AppRouter />
+    </AppLayout>
+  </RecoilRoot>
 )
 
 export default App

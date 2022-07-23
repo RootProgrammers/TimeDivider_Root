@@ -3,10 +3,7 @@ import CreateSpareTime from 'pages/CreateSpareTime'
 import CreateTimerName from 'pages/CreateTimerName'
 import CreateTimeDivider from 'pages/CreateTimeDivider'
 import UpdateTimeDivider from 'pages/UpdateTimeDivider'
-import ShareTask from 'pages/ShareTask'
-
 import NotFound from 'pages/NotFound'
-import DetailPost from 'pages/DetailPost'
 
 const routes = [
   { path: '', view: Home },
@@ -34,15 +31,6 @@ const routes = [
     path: 'updateTimeDivider',
     view: UpdateTimeDivider,
     title: '모래시계 편집하기',
-  },
-  {
-    path: 'shareTask',
-    view: ShareTask,
-    title: '할일 공유 게시판',
-  },
-  {
-    path: 'detailPost/:postId',
-    view: DetailPost,
   },
   {
     path: '*',
